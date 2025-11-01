@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="add-container">
+            <div class="addBudget">
+                <h2>Add Budget</h2>
+                <p>Budget</p>
+
+                <div class="budget-input-group">
+                    <input type="number" id="budget-input" placeholder="Enter budget amount">
+                    <button id="add-budget-btn">Add Budget</button>
+                </div>
+            </div>
+
+            <div class="addExpense">
+                <h2>Add Expense</h2>
+                <p>Expense Title</p>
+                <input type="text" id="expense-title-input" placeholder="Enter expense title">
+                
+                <div class="expense-input-group">
+                    <p>Expense Amount</p>
+                    <input type="number" id="expense-amount-input" placeholder="Enter expense amount">
+                    <button id="add-expense-btn">Add Expense</button>
+                </div>
+            </div>
+
+            <div class="resetBtnContainer">
+                <button id="reset-btn">Reset All</button>
+            </div>
+        </div>
+        
+        <div class="track-container">
+            <div class="summary-display">
+                <div class="budget-display">
+                    <h3>Total Budget: ₹<span id="total-budget">0.00</span></h3>
+                </div>
+                <div class="expense-display">
+                    <h3>Total Expenses: ₹<span id="total-expenses">0.00</span></h3>
+                </div>
+                <div class="balance-display">
+                    <h3>Balance: ₹<span id="balance-amount">0.00</span></h3>
+                </div>
+            </div>
+            <hr>
+
+            <div class="expense-list">
+                <h3>Expense History:</h3>
+                <hr>
+
+                <div class="expense-details">
+                    <div class="details-title">
+                        <h4>Expense Name</h4>
+                        <h4>Amount</h4>
+                        <h4>Action</h4>
+                    </div>
+                    <hr>
+
+                    <ul id="expense-items">
+                        <!-- Expense items will be added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
